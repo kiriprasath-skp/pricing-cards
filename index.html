@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Pricing — Plans that grow with you</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,600;0,9..144,700;1,9..144,500&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<section class="pricing">
+  <div class="blob b1"></div>
+  <div class="blob b2"></div>
+  <div class="blob b3"></div>
+
+  <div class="wrap">
+    <div class="heading">
+      <span class="kicker">Pricing</span>
+      <h1>Plans that grow <span class="grad">with you</span>.</h1>
+      <p class="sub">Start free-ish, scale when you're ready. No hidden fees, cancel whenever.</p>
+    </div>
+
+    <div class="toggle-row">
+      <span class="toggle-label" data-active="true">Monthly</span>
+      <button type="button" class="switch" id="billingToggle" role="switch" aria-checked="false" aria-label="Toggle annual billing">
+        <span class="knob"></span>
+      </button>
+      <span class="toggle-label">Annually</span>
+      <span class="save-badge">Save 20%</span>
+    </div>
+
+    <div class="cards">
+      <article class="card" data-accent="teal">
+        <h2>Starter</h2>
+        <p class="tagline">For individuals getting started</p>
+        <div class="price">
+          <span class="currency">$</span><span class="amount" data-monthly="9" data-annual="7">9</span><span class="period">/mo</span>
+        </div>
+        <ul class="features">
+          <li>Up to 3 active projects</li>
+          <li>Community support</li>
+          <li>Core toolkit access</li>
+          <li>1 GB storage</li>
+        </ul>
+        <button type="button" class="buy">Get Started</button>
+      </article>
+
+      <article class="card popular" data-accent="violet">
+        <span class="ribbon">Most Popular</span>
+        <h2>Growth</h2>
+        <p class="tagline">For growing teams shipping fast</p>
+        <div class="price">
+          <span class="currency">$</span><span class="amount" data-monthly="29" data-annual="23">29</span><span class="period">/mo</span>
+        </div>
+        <ul class="features">
+          <li>Unlimited projects</li>
+          <li>Priority support</li>
+          <li>Advanced analytics</li>
+          <li>10 GB storage</li>
+          <li>Team collaboration</li>
+        </ul>
+        <button type="button" class="buy">Get Started</button>
+      </article>
+
+      <article class="card" data-accent="amber">
+        <h2>Scale</h2>
+        <p class="tagline">For organizations that need more</p>
+        <div class="price">
+          <span class="currency">$</span><span class="amount" data-monthly="79" data-annual="63">79</span><span class="period">/mo</span>
+        </div>
+        <ul class="features">
+          <li>Dedicated account manager</li>
+          <li>Custom integrations</li>
+          <li>Enterprise-grade security</li>
+          <li>Unlimited storage</li>
+          <li>SLA guarantee</li>
+        </ul>
+        <button type="button" class="buy">Get Started</button>
+      </article>
+    </div>
+    <p class="scroll-hint">← swipe to compare plans →</p>
+  </div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
